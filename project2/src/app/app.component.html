@@ -1,0 +1,23 @@
+<body>
+<nav class="navbar">
+  <div class="navbar-left">
+    <h1>Silicon University</h1>
+  </div>
+  <div class="navbar-right">
+    <button class="nav-button" (click)="toggleTeams()">
+      {{ currentView === 'team' ? 'Home' : 'Teams' }}
+    </button>
+    <button class="nav-button" (click)="toggleLogin()">
+      {{ currentView === 'login' ? 'Home' : 'Login' }}
+    </button>
+  </div>
+</nav>
+
+
+<div class="main-content">
+  <!-- Conditional rendering based on currentView -->
+  <app-home *ngIf="currentView === 'home'"></app-home>
+  <app-login *ngIf="currentView === 'login'"></app-login>
+  <app-team *ngIf="currentView === 'team'"></app-team>
+</div>
+</body>

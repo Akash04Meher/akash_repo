@@ -1,0 +1,45 @@
+.h1{
+  text-align: center;
+}
+
+.featured-contact {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Fixed 3-column grid */
+  gap: 20px;
+  justify-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, rgb(10, 208, 247), rgb(6, 241, 131));
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  max-width: 280px;
+  width: 100%;
+}
+
+.contact-card img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  margin-right: 16px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

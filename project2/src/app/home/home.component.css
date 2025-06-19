@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-container {
+  background-image: url('/assets/images/Silicon.jpg'); /* Adjust path based on project */
+  background-size: cover;          /* Make image cover entire area */
+  background-position: center;     /* Center the image */
+  background-repeat: no-repeat;    /* Prevent tiling */
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(to right, #1ee9af, #11eded);
+  color: white;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background-color: black;
+  color: #00fca4;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #e0e0e0;
+  color:black;
+}
+
+.section {
+  color: white;
+  padding: 5px 10px;            /* ↓ reduced top & bottom padding */
+  margin: 10px auto;             /* ↓ reduced outer space */
+  background: rgb(8, 45, 168);
+  max-width: 600px;              /* optional: still narrower */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+#about.section {
+  margin-top: 100px;
+}
+
+.footer {
+  margin-top: 40px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+#about.section p {
+  text-align: left;
+  font-size: larger;
+}

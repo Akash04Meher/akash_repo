@@ -1,0 +1,35 @@
+<div class="login-container">
+  <h2>Login</h2>
+  <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+    <input
+      type="text"
+      name="username"
+      [(ngModel)]="username"
+      placeholder="Username: "
+      required
+    />
+    <input
+      type="text"
+      name="cno"
+      [(ngModel)]="cno"
+      placeholder="Contact No: "
+      required
+      maxlength="10"
+      pattern="^[0-9]{10}$"
+/>
+    <input
+      type="password"
+      name="password"
+      [(ngModel)]="password"
+      placeholder="Password: "
+      required
+    />
+    <div class="buttons">
+      <button type="reset" (click)="onReset()">Reset</button>
+      <button type="submit">Login</button>
+    </div>
+  </form>
+  <p class="message" [ngClass]="{ success: isSuccess, error: !isSuccess }">
+    {{ message }}
+  </p>
+</div>
